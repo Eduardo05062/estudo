@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Inteiro</title>
+</head>
+<body>
+    <script>
+        let numerostring = prompt("Digite um número:");
+        let numero = Number(numerostring); 
+
+        if (Number.isInteger(numero)) {
+            console.log("Valor convertido para inteiro:", numero);
+        } else {
+            console.log("Valor inválido!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número par ou impár</title>
+</head>
+<body>
+    <script>
+        function verificar(){
+            let num = prompt("Digite um número:")
+            let num1 = Number(num)
+            if(isNaN(num1)){
+                alert(`"${num}" não é um número, digite novamente`)
+            }
+            else if(num1 % 2 === 0){
+             alert("Esse número é par")
+            }
+            else{
+                alert("Esse número é impar")
+            }
+            
+        }
+    
+    </script>
+    <button type="button" onclick="verificar()">Começar</button>
+</body>
+</html>

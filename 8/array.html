@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        function sortear() {
+            let numeros = [2, 4, 7, 3, 8, 23, 56, 12, 5, 86, 32, 34, 65, 3, 23, 5, 88, 344, 224, 34, 43, 7, 67, 35, 38, 43];
+            let escolha = prompt("Escolha um número de 0 a 25:");
+            let min = 2;
+            let max = 344;
+            let aleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+            if (numeros[escolha] === aleatorio) {
+                alert("Você foi o incrivel ganhar de nada!!!!!!!!!!!")
+            }
+            else {
+                alert("Você não sorteu o numero certo")
+            }
+        }
+
+
+
+
+
+    </script>
+    <button type="button" onclick="sortear()">Sorteie o seu número:</button>
+    
+</body>
+
+</html>
