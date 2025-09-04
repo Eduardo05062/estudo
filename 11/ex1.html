@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        .body {
+            text-align: center;
+        }
+    </style>
+    <script>
+
+        let nome
+        let idade
+        
+        function guardar() {
+            nome = document.getElementById("textinput").value;
+        
+        }
+        function guardar1() {
+            idade = document.getElementById("textinput1").value;
+        }
+        function mostrar() {
+            alert("O seu nome é " + nome + " e você tem " + idade + " anos")
+            document.getElementById("textinput").value=""
+            document.getElementById("textinput1").value=""
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="textinput" placeholder="Digite o seu nome:">
+    <button onclick="guardar()">guardar</button>
+    <br>
+    <br>
+
+    <input type="text" id="textinput1" placeholder="Digite a sua idade:">
+    <button onclick="guardar1()">guardar</button>
+
+    <button onclick="mostrar()">mostar</button>
+</body>
+
+</html>
